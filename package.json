@@ -1,5 +1,5 @@
 {
-  "name": "melindaminch-dot-com",
+  "name": "nein09-dot-com",
   "version": "1.0.0",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -8,5 +8,8 @@
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "npm": "^6.0.0"
   }
 }
