@@ -42,8 +42,6 @@ header {
   background-color: #4ABDAC;
   height: 50px;
   position: relative; }
-  header a, header a:visited {
-    color: #000; }
   header a:active, header a:hover, header a:focus {
     color: #F7B733; }
 
@@ -78,19 +76,9 @@ section {
 
 .cool-background {
   background-color: #4ABDAC; }
-  .cool-background a, .cool-background a:visited {
-    color: #000; }
-  .cool-background a:active, .cool-background a:hover, .cool-background a:focus {
-    color: #FC4A1A; }
 
 .warm-background {
-  font-weight: 100;
-  background-color: #FC4A1A;
-  color: #FFF; }
-  .warm-background a, .warm-background a:visited {
-    color: #FFF; }
-  .warm-background a:active, .warm-background a:hover, .warm-background a:focus {
-    color: #F7B733; }
+  background-color: #F7B733; }
 
 .big-text {
   margin: 20px; }
