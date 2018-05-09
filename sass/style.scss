@@ -1,0 +1,180 @@
+/* Colors! */
+$light-background: #DFDCE3;
+$warm-accent: #FC4A1A;
+$bright-accent: #F7B733;
+$cool-accent: #4ABDAC;
+$black: #000;
+$white: #FFF;
+
+/* Fonts! */
+$body-font: 'Raleway', sans-serif;
+
+/* Breakpoints! */
+ @mixin breakpoint($point) {
+   @if $point == medium {
+     @media only screen and (min-width: 400px) and (max-width: 767px) { @content ; }
+  }
+   @else if $point == large {
+     @media only screen and (min-width: 768px) and (max-width: 1023px) { @content ; }
+  }
+  @else if $point == large-and-up {
+     @media only screen and (min-width: 768px) { @content ; }
+  }
+    @else if $point == xlarge {
+     @media only screen and(min-width: 1024px) { @content ; }
+  }
+}
+
+body {
+  background-color: $light-background;
+  color: $black;
+  font-family: $body-font;
+  font-size: 100%;
+  margin: 0;
+}
+
+a, a:visited {
+  color: $black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active, a:hover, a:focus {
+  color: $warm-accent;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 30px;
+  top: -25px;
+  left: 0;
+  position: absolute;
+  @include breakpoint(medium) {
+    font-size: 40px;
+    top: 0;
+    left: 10px;
+  }
+  @include breakpoint(large-and-up) {
+    font-size: 50px;
+    top: 50px;
+    left: 50px;
+  }
+}
+
+h2 {
+  margin: 0.25em 0;
+}
+
+header {
+  background-color: $cool-accent;
+  height: 50px;
+  position: relative;
+
+  a, a:visited {
+    color: $white;
+  }
+
+  a:active, a:hover, a:focus {
+    color: $bright-accent;
+  }
+}
+
+.header__links {
+  display: flex;
+  margin: 0;
+  padding: 15px;
+}
+
+.header__link {
+  margin: 5px;
+  @include breakpoint(large-and-up) {
+    margin: 20px;
+  }
+}
+
+.about {
+  margin-left: auto;
+}
+
+section {
+  margin: 0;
+  padding: 20px;
+
+  @include breakpoint(large-and-up) {
+    margin: 20px 0;
+    padding: 20px 50px;
+  }
+}
+
+.section__flex {
+  display: flex;
+  flex-direction: column-reverse;
+  @include breakpoint(large-and-up) {
+    flex-direction: row;
+  }
+}
+
+.cool-background {
+  background-color: $cool-accent;
+
+  a, a:visited {
+    color: $black;
+  }
+
+  a:active, a:hover, a:focus {
+    color: $warm-accent;
+  }
+}
+
+.warm-background {
+  background-color: $warm-accent;
+  color: $white;
+
+  a, a:visited {
+    color: $white;
+  }
+
+  a:active, a:hover, a:focus {
+    color: $bright-accent;
+  }
+}
+
+.big-text {
+  margin: 20px;
+
+  img {
+    max-width: 100%;
+  }
+
+  @include breakpoint(large-and-up) {
+    margin: 50px;
+  }
+}
+
+time {
+  font-style: italic;
+}
+
+.section__text {
+  margin: 10px;
+}
+
+.section__image {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  margin: 0 auto;
+
+  @include breakpoint(large-and-up) {
+    margin: 0 10px 0 auto;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+
+}

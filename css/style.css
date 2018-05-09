@@ -1,0 +1,119 @@
+/* Colors! */
+/* Fonts! */
+/* Breakpoints! */
+body {
+  background-color: #DFDCE3;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
+  margin: 0; }
+
+a, a:visited {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:active, a:hover, a:focus {
+  color: #FC4A1A; }
+
+li {
+  list-style-type: none; }
+
+h1 {
+  font-size: 30px;
+  top: -25px;
+  left: 0;
+  position: absolute; }
+  @media only screen and (min-width: 400px) and (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+      top: 0;
+      left: 10px; } }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 50px;
+      top: 50px;
+      left: 50px; } }
+
+h2 {
+  margin: 0.25em 0; }
+
+header {
+  background-color: #4ABDAC;
+  height: 50px;
+  position: relative; }
+  header a, header a:visited {
+    color: #FFF; }
+  header a:active, header a:hover, header a:focus {
+    color: #F7B733; }
+
+.header__links {
+  display: flex;
+  margin: 0;
+  padding: 15px; }
+
+.header__link {
+  margin: 5px; }
+  @media only screen and (min-width: 768px) {
+    .header__link {
+      margin: 20px; } }
+
+.about {
+  margin-left: auto; }
+
+section {
+  margin: 0;
+  padding: 20px; }
+  @media only screen and (min-width: 768px) {
+    section {
+      margin: 20px 0;
+      padding: 20px 50px; } }
+
+.section__flex {
+  display: flex;
+  flex-direction: column-reverse; }
+  @media only screen and (min-width: 768px) {
+    .section__flex {
+      flex-direction: row; } }
+
+.cool-background {
+  background-color: #4ABDAC; }
+  .cool-background a, .cool-background a:visited {
+    color: #000; }
+  .cool-background a:active, .cool-background a:hover, .cool-background a:focus {
+    color: #FC4A1A; }
+
+.warm-background {
+  background-color: #FC4A1A;
+  color: #FFF; }
+  .warm-background a, .warm-background a:visited {
+    color: #FFF; }
+  .warm-background a:active, .warm-background a:hover, .warm-background a:focus {
+    color: #F7B733; }
+
+.big-text {
+  margin: 20px; }
+  .big-text img {
+    max-width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .big-text {
+      margin: 50px; } }
+
+time {
+  font-style: italic; }
+
+.section__text {
+  margin: 10px; }
+
+.section__image {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .section__image {
+      margin: 0 10px 0 auto; } }
+
+footer {
+  text-align: center;
+  padding: 20px; }
