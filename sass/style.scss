@@ -74,7 +74,7 @@ header {
   position: relative;
 
   a, a:visited {
-    color: $white;
+    color: $black;
   }
 
   a:active, a:hover, a:focus {
@@ -130,6 +130,7 @@ section {
 }
 
 .warm-background {
+  font-weight: 100;
   background-color: $warm-accent;
   color: $white;
 
