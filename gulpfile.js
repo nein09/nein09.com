@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
 var concat = require('gulp-concat');
-var webserver = require('gulp-webserver');
+var connect = require('gulp-connect');
 
 gulp.task('babel', function() {
   return gulp.src('src/**/*.js')
@@ -24,13 +24,17 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', function() {
-  gulp.watch('sass/**/*.scss', ['sass']);
-  gulp.watch('src/**/*.js', ['babel']);
-  gulp.src('.')
-  .pipe(webserver({
+gulp.task('connect', function() {
+  connect.server({
+    root: 'app',
     livereload: true,
     directoryListing: false,
     open: true
-  }));
+  });
+});
+
+gulp.task('default', function() {
+  gulp.watch('sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('src/**/*.js', gulp.series('babel'));
+  gulp.src('.').pipe(connect.reload());
 });
