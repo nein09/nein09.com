@@ -2,13 +2,13 @@
   "name": "nein09-dot-com",
   "version": "1.1.0",
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
   },
