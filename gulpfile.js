@@ -24,17 +24,20 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('connect', function() {
+gulp.task("webserver", function() {
   connect.server({
-    root: 'app',
-    livereload: true,
-    directoryListing: false,
-    open: true
+    root: "./",
+    livereload: true
   });
 });
 
-gulp.task('default', function() {
-  gulp.watch('sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('src/**/*.js', gulp.series('babel'));
-  gulp.src('.').pipe(connect.reload());
+gulp.task("watch", function() {
+  gulp.watch("sass/**/*.scss", gulp.series("sass"));
+  gulp.watch("src/**/*.js", gulp.series("babel"));
+  gulp.src(".").pipe(webserver.reload());
 });
+
+gulp.task(
+  "default",
+  gulp.series("babel", "sass", "webserver", gulp.parallel("watch"))
+);
