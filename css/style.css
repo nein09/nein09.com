@@ -59,6 +59,9 @@ header {
 .about {
   margin-left: auto; }
 
+.writing li {
+  margin-top: 10px; }
+
 section {
   margin: 0;
   padding: 20px; }
