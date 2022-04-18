@@ -2,4 +2,5 @@
 melindaminch.sublime-workspace
 melindaminch.sublime-project
 node_modules/
-
+.parcel-cache
+style.css.map
