@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
 var babel = require('gulp-babel');
 var concat = require('gulp-concat');
