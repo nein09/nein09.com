@@ -14,11 +14,10 @@
     "watch": "parcel watch"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2"
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
   },
   "dependencies": {
-    "npm": "^8.11.0"
+    "npm": "^9.6.4"
   }
 }
