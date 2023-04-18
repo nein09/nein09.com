@@ -21,7 +21,7 @@ $body-font: 'Raleway', sans-serif;
      @media only screen and (min-width: 768px) { @content ; }
   }
     @else if $point == xlarge {
-     @media only screen and(min-width: 1024px) { @content ; }
+     @media only screen and (min-width: 1024px) { @content ; }
   }
 }
 
