@@ -2,6 +2,7 @@
   "name": "nein09-dot-com",
   "version": "1.1.0",
   "source": [
+    "index.html",
     "sass/style.scss"
   ],
   "targets": {
@@ -11,7 +12,7 @@
   },
   "scripts": {
     "build": "parcel build",
-    "watch": "parcel watch"
+    "watch": "parcel"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
