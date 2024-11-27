@@ -1,24 +1,30 @@
 {
-  "name": "nein09-dot-com",
-  "version": "1.1.0",
-  "source": [
-    "index.html",
-    "sass/style.scss"
-  ],
-  "targets": {
-    "default": {
-      "distDir": "css"
+    "name": "nein09-dot-com",
+    "version": "1.1.0",
+    "source":
+    [
+        "index.html",
+        "sass/style.scss"
+    ],
+    "targets":
+    {
+        "default":
+        {
+            "distDir": "css"
+        }
+    },
+    "scripts":
+    {
+        "build": "parcel build",
+        "watch": "parcel"
+    },
+    "devDependencies":
+    {
+        "@parcel/transformer-sass": "^2.13.2",
+        "parcel": "^2.13.2"
+    },
+    "dependencies":
+    {
+        "npm": "^10.9.1"
     }
-  },
-  "scripts": {
-    "build": "parcel build",
-    "watch": "parcel"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
-  },
-  "dependencies": {
-    "npm": "^10.5.2"
-  }
 }
