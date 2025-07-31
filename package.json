@@ -10,7 +10,7 @@
     {
         "default":
         {
-            "distDir": "css"
+            "distDir": "dist"
         }
     },
     "scripts":
