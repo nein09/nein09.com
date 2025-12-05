@@ -2,7 +2,9 @@
 $light-background: #DFDCE3;
 $warm-accent: #FC4A1A;
 $bright-accent: #F7B733;
+$dark-accent: #800000;
 $cool-accent: #4ABDAC;
+$cool-accent--dark: #2a0e5e;
 $black: #000;
 $white: #FFF;
 
@@ -31,16 +33,30 @@ body {
   font-family: $body-font;
   font-size: 100%;
   margin: 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $black;
+    color: $light-background;
+  }
 }
 
 a, a:visited {
   color: $black;
   font-weight: bold;
   text-decoration: none;
+
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
 }
 
 a:active, a:hover, a:focus {
   color: $warm-accent;
+
+
+  @media (prefers-color-scheme: dark) {
+    color: $bright-accent;
+  }
 }
 
 li {
@@ -70,6 +86,9 @@ h2 {
 
 header {
   background-color: $cool-accent;
+  @media (prefers-color-scheme: dark) {
+    background-color: $cool-accent--dark;
+  }
   a:active, a:hover, a:focus {
     color: $bright-accent;
   }
@@ -120,10 +139,18 @@ section {
 
 .cool-background {
   background-color: $cool-accent;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $cool-accent--dark;
+  }
 }
 
 .warm-background {
   background-color: $bright-accent;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-accent;
+  }
 }
 
 .big-text {
