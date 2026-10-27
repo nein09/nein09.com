@@ -19,6 +19,12 @@
         "parcel": "^2.16.4"
     },
     "dependencies": {
-        "npm": "^11.17.0"
+        "npm": "^11.21.1"
+    },
+    "allowScripts": {
+        "@parcel/watcher@2.6.0": true,
+        "lmdb@2.8.5": true,
+        "@swc/core@1.16.20": true,
+        "msgpackr-extract@3.0.4": true
     }
 }
