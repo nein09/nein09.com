@@ -19,7 +19,7 @@
         "parcel": "^2.16.4"
     },
     "dependencies": {
-        "npm": "^9.6.2"
+        "npm": "^12.2.2"
     },
     "allowScripts": {
         "@parcel/watcher@2.6.0": true,
